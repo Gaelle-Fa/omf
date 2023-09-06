@@ -1,0 +1,8 @@
+.footer{
+    background-color: $footer-color;
+    color: white;
+    padding: 20px;
+    .footer__liste-footer{
+        flex-direction: column;
+    }
+}

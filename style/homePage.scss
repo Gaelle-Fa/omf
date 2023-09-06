@@ -1,0 +1,36 @@
+@import '../components/footer';
+@import '../components/header';
+@import '../utils/colors';
+@import '../utils/mixins';
+@import '../utils/button';
+
+body {
+    background-color: $background-color;
+}
+.header{
+    align-items: center;
+
+    .header__nav-barre{
+        text-align: center;
+        font-size: 20px;
+    }
+}
+.subHeader {
+
+    text-align: center;
+    background-color: $background-color;
+    h1 {
+        font-size: 25px;
+        color: black;
+    }
+
+    p {
+        font-size: 20px;
+        font-weight: 300;
+    }
+}
+
+
+.itemMenu {
+    @include card-clickable($color : black);
+}

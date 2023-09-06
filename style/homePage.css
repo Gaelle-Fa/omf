@@ -1,0 +1,35 @@
+.violetButton {
+  cursor: pointer;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  border: none;
+  padding: 20px;
+  color: white;
+  background: linear-gradient(193.33deg, #9356DC -11.44%, #FF79DA 123.93%);
+  border-radius: 20px;
+}
+
+body {
+  background-color: #789456;
+}
+
+.subHeader {
+  text-align: center;
+}
+.subHeader h1 {
+  font-size: 25px;
+  color: black;
+}
+.subHeader p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.itemMenu {
+  cursor: pointer;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  border: none;
+  padding: 20px;
+  color: black;
+  background: white;
+  border-radius: 20px;
+}/*# sourceMappingURL=homePage.css.map */
