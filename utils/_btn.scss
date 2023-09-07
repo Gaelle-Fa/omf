@@ -1,0 +1,4 @@
+.btn-gradient{
+    @include card-clickable;
+    background: $gradient-btn; 
+}

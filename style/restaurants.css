@@ -1,1 +1,19 @@
-/*# sourceMappingURL=restaurants.css.map */
+.btn-gradient {
+  cursor: pointer;
+  box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  border: none;
+  padding: 20px;
+  color: white;
+  background: white;
+  border-radius: 20px;
+  background: linear-gradient #9356DC, #FF79DA;
+}
+
+.footer {
+  background-color: #353535;
+  color: white;
+  padding: 20px;
+}
+.footer .footer__liste-footer {
+  flex-direction: column;
+}/*# sourceMappingURL=restaurants.css.map */
