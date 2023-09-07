@@ -1,11 +1,11 @@
-@mixin card-clickable($padding : 20px, $color : white, $bg : white, $radius : 20px){
+@mixin card-clickable($padding : 18px, $color : white, $bg : white, $radius : 20px){
     cursor: pointer;
-    box-shadow: 0px 4px 15px 0px #00000026;
+    box-shadow: 0px 5px 15px 0px #00000026;
     border: none;
 
 
     padding: $padding;
     color: $color;
-    background: $bg;
+    background-color: $gradient-btn;
     border-radius: $radius;
 }

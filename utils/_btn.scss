@@ -1,4 +1,15 @@
 .btn-gradient{
     @include card-clickable;
-    background: $gradient-btn; 
+    background: $gradient-btn;
+    border-radius: 50px; 
+    font-size: 15px;
+}
+.choice-btn{
+    @include card-clickable;
+    margin: 10px 20px 10px 20px;
+    color: black;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+    width: auto;
 }
