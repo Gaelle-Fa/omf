@@ -37,8 +37,9 @@ body {
 .nav-functioning{
     background-color: white;
     width: 100%;
-    padding: 20px 0px 20px 20px;
-    margin-bottom: 40px;
+    height: 440px;
+    padding: 20px 0px 20px 0px;
+    margin-bottom: 25px;
     .nav-functioning__h2{
         font-weight: 700;
         margin: 20px;
@@ -56,15 +57,47 @@ body {
 } 
 .bubble-number{
     @include bubble-number;
-    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    
 }
 .i-list{
     padding-right: 20px;
+    color:$footer-color
 }  
 .i-list-color{
     padding-right: 20px;
     color:$purple;
 }  
-.itemMenu {
-    @include card-clickable($color : black);
+.restaurants{
+    background-color: $background-color;
+    width: 100%;
+    padding: 20px 0px 20px 0px;
+    margin-bottom: 35px; 
+    .restaurants__h2{
+        font-weight: 700;
+        margin: 10px 0px 20px 20px;
+        
+    }
+    .restaurants__restaurant-card{
+       
+        @include card-restaurant 
+        
+    }
+    .restaurants__img-card{
+        @include img-card
+        
+    }
+    .restaurants__h3{
+        font-size: 18px;
+        margin: 10px 0 0 10px;
+    }
+    .restaurants__P{
+        font-size: 17px;
+        font-weight: 300;
+        margin:5px 0 10px 10px;
+    }
 }
+ 

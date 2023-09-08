@@ -2,8 +2,20 @@
 .footer{
     background-color: $footer-color;
     color: white;
-    padding: 20px;
-    .footer__liste-footer{
-        flex-direction: column;
+    width: 100%;
+    .footer__h2{
+        font-family: shrikhand;
+        margin-left: 20px;
     }
+    
+    .footer__list-footer{
+        text-decoration: none;
+        color:$footer-color;
+     
+    }
+}
+
+ul{
+    color: white;
+
 }
