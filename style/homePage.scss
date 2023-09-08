@@ -10,6 +10,7 @@ body {
     background-color: $background-color;
     font-family: roboto;
     width: 100%;
+    margin: 0px;
 }
 
 .subHeader {
@@ -37,6 +38,7 @@ body {
     background-color: white;
     width: 100%;
     padding: 20px 0px 20px 20px;
+    margin-bottom: 40px;
     .nav-functioning__h2{
         font-weight: 700;
         margin: 20px;
@@ -51,8 +53,11 @@ body {
         flex-direction: row;
         
     }
-   
 } 
+.bubble-number{
+    @include bubble-number;
+    position: relative;
+}
 .i-list{
     padding-right: 20px;
 }  

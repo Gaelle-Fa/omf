@@ -9,3 +9,11 @@
     background-color: $gradient-btn;
     border-radius: $radius;
 }
+@mixin bubble-number($margin: 10px,  $bgc:$purple, $color: white, $br: 50px){
+    border: none;
+
+    margin:$margin;
+    background-color: $bgc;
+    color: $color;
+    border-radius: $br;
+}
