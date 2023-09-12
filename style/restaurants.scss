@@ -5,3 +5,60 @@
 @import '../components/footer';
 @import '../components/header';
 
+body{
+    margin: 0px;
+    font-family: roboto;
+    width: 100%
+}
+.img-menu-page{
+    @include img-card;
+    display:flex; 
+    height: 275px;  
+    width: 375px;
+
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    background-color: $background-color;
+    border-radius: 30px 30px 0 0;
+    width: 100%;
+    position: relative;
+    margin-top: -40px;
+    padding-bottom: 30px;
+    .menu__h1{
+        font-family: shrikhand;
+        margin: 20px;
+        font-weight: 400;
+        font-style: italic;
+        font-size: 28px;
+    }
+    .menu__h3{
+        margin: 15px;
+        font-weight: 300;
+        font-size: 16px;
+    }
+    .menu__dish{
+        @include card-clickable;
+        color: black;
+        padding: 10px;
+        margin: 15px;
+        border-radius: 20px;
+        .menu__dish-h4{
+            margin: 0 0 0 10px;
+            font-weight: 500;
+            font-size: 18px;
+        }
+        .menu__dish-p{
+            margin: 0 0 0 10px;
+            font-weight: 300;
+            font-size: 15px;
+        }
+        .menu__dish-p-price{
+            display: flex;
+            justify-content: flex-end;
+            margin:-20px 0 0 0;
+        }
+    }
+    
+}

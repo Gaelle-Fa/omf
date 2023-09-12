@@ -3,6 +3,8 @@
     background-color: $footer-color;
     color: white;
     width: 100%;
+    padding:10px 10px 10px 0px;
+    gap: 16px;
     .footer__h2{
         font-family: shrikhand;
         margin-left: 20px;
@@ -11,11 +13,11 @@
     .footer__list-footer{
         text-decoration: none;
         color:$footer-color;
-     
-    }
+       
 }
 
 ul{
     color: white;
-
+    margin-left: -20px;
+}
 }

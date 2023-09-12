@@ -28,10 +28,26 @@
   font-size: 16px;
 }
 
+.menu__btn-gradient {
+  cursor: pointer;
+  box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1490196078);
+  border: none;
+  padding: 18px;
+  color: white;
+  background-color: linear-gradient(360deg, rgb(147, 86, 220), rgb(255, 121, 218));
+  border-radius: 20px;
+  background: linear-gradient(360deg, rgb(147, 86, 220), rgb(255, 121, 218));
+  border-radius: 50px;
+  font-size: 15px;
+  margin: 30px 80px;
+}
+
 .footer {
   background-color: #353535;
   color: white;
   width: 100%;
+  padding: 10px 10px 10px 0px;
+  gap: 16px;
 }
 .footer .footer__h2 {
   font-family: shrikhand;
@@ -41,9 +57,9 @@
   text-decoration: none;
   color: #353535;
 }
-
-ul {
+.footer ul {
   color: white;
+  margin-left: -20px;
 }
 
 .header {
@@ -68,6 +84,29 @@ ul {
   font-size: 16px;
   font-family: roboto;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25) inset;
+}
+
+.header-restaurant {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  font-family: shrikhand;
+  background-color: white;
+}
+.header-restaurant .a-icon-fleche {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-decoration: none;
+  color: black;
+  font-size: x-large;
+  margin-left: 10px;
+}
+.header-restaurant .header-restaurant__h1 {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 10px;
 }
 
 body {
@@ -156,6 +195,7 @@ body {
   cursor: pointer;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1490196078);
   border: none;
+  text-decoration: none;
   padding-bottom: 8px;
   margin: 20px;
   color: black;
@@ -178,4 +218,8 @@ body {
   font-size: 17px;
   font-weight: 300;
   margin: 5px 0 10px 10px;
+}
+.restaurants a {
+  text-decoration: none;
+  color: black;
 }/*# sourceMappingURL=homePage.css.map */

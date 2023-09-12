@@ -14,3 +14,10 @@
     width: auto;
     font-size: 16px;
 }
+.menu__btn-gradient{
+    @include card-clickable;
+    background: $gradient-btn;
+    border-radius: 50px; 
+    font-size: 15px;
+    margin: 30px 80px;
+}
