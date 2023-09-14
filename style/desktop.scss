@@ -1,0 +1,13 @@
+@import '../utils/colors';
+@import '../utils/mixins';
+@import '../utils/btn';
+@import '../components/footer';
+@import '../components/header';
+
+@media screen and (max-width: 1024px){
+    .nav-functioning-btn{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+    

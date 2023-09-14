@@ -38,3 +38,8 @@
     background-color: $gradient-btn;
     border-radius: $radius;
 }
+@mixin heart ($cursor: pointer, $position: absolute, $font-size: x-large){
+    cursor: $cursor;
+    position: $position;
+    font-size: $font-size;
+}

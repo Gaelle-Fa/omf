@@ -12,9 +12,10 @@ body{
 }
 .img-menu-page{
     @include img-card;
-    display:flex; 
+    display: flex; 
+    justify-content: center;
     height: 275px;  
-    width: 375px;
+   
 
 }
 .menu{
@@ -37,6 +38,10 @@ body{
         margin: 15px;
         font-weight: 300;
         font-size: 16px;
+    }
+    .menu__h3-border{
+        border-bottom: solid 3px $btn-background-color;
+        width: 40px;
     }
     .menu__dish{
         @include card-clickable;

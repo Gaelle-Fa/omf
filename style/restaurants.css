@@ -42,6 +42,11 @@
   margin: 30px 80px;
 }
 
+footer {
+  margin: 0;
+  width: 100%;
+}
+
 .footer {
   background-color: #353535;
   color: white;
@@ -69,6 +74,7 @@
   font-size: 20px;
   font-family: shrikhand;
   background-color: white;
+  width: 100%;
 }
 .header .header__h1 {
   display: flex;
@@ -123,8 +129,8 @@ body {
   -o-object-fit: cover;
      object-fit: cover;
   display: flex;
+  justify-content: center;
   height: 275px;
-  width: 375px;
 }
 
 .menu {
@@ -148,6 +154,10 @@ body {
   margin: 15px;
   font-weight: 300;
   font-size: 16px;
+}
+.menu .menu__h3-border {
+  border-bottom: solid 3px #99E2D0;
+  width: 40px;
 }
 .menu .menu__dish {
   cursor: pointer;
