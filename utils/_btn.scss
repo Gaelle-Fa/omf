@@ -3,6 +3,8 @@
     background: $gradient-btn;
     border-radius: 50px; 
     font-size: 15px;
+    width: fit-content;
+    min-width: 186px;
 }
 .choice-btn{
     @include card-clickable;
@@ -15,9 +17,37 @@
     font-size: 16px;
 }
 .menu__btn-gradient{
-    @include card-clickable;
-    background: $gradient-btn;
-    border-radius: 50px; 
-    font-size: 15px;
-    margin: 30px 80px;
+   @extend .btn-gradient;
+   margin: 30px auto;
 }
+.heart:hover{
+    .heart__content-solid {
+        opacity: 1;
+        transition: all 1s ease-in-out;
+    }
+    .heart__content-light{
+        opacity: 0;
+        transition: all 1s ease-in-out;
+    }
+  }
+  .heart__solid{
+    cursor: pointer;
+    font-size: xx-large;
+    position:absolute;
+    right: 5px;
+    top: 5%;
+    background-image: $gradient-btn;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 0;
+   
+  }
+  .heart__light{
+    cursor: pointer;
+    font-size:xx-large;
+    position:absolute;
+    right: 5px;
+    top: 5%;
+    opacity: 1;
+  }

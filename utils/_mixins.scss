@@ -26,6 +26,7 @@
     width: $width;
     margin: $margin;
     object-fit: $object-fit;
+    
 }
 @mixin card-restaurant($margin:20px, $color : black, $bg : white, $radius : 20px){
     cursor: pointer;
@@ -38,7 +39,7 @@
     background-color: $gradient-btn;
     border-radius: $radius;
 }
-@mixin heart ($cursor: pointer, $position: absolute, $font-size: x-large){
+@mixin heart ($cursor: pointer, $position: relative, $font-size: x-large){
     cursor: $cursor;
     position: $position;
     font-size: $font-size;
