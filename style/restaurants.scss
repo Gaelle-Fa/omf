@@ -16,7 +16,11 @@ body{
     display: flex; 
     justify-content: center;
     height: 275px;
-
+    img{
+        object-fit: cover;
+        width: 100%;
+        height: 90%;
+    }
 }
 .menu{
     display: flex;
@@ -33,6 +37,8 @@ body{
         font-weight: 400;
         font-style: italic;
         font-size: 28px;
+        display:flex;
+        flex-direction: row;
     }
     .menu__h3{
         margin: 15px;
@@ -66,4 +72,9 @@ body{
         }
     }
   
+}
+.heart-container-restaurant{
+  @extend .heart-container;
+  margin: 10px;
+
 }

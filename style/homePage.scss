@@ -108,7 +108,12 @@ body {
         text-decoration: none;
         color: black;
     }
-}
-.heart{
-    @include heart;
+   
+    .restaurants__heart-container-home{
+        @extend .heart-container;
+        display: flex;
+        justify-content: flex-end;
+        position: absolute;
+        width: 90%;
+    }
 }
