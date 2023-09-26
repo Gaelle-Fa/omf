@@ -55,10 +55,14 @@ body{
         padding: 10px;
         margin: 15px;
         border-radius: 20px;
+        position: relative;
+        overflow: hidden;
+        & :hover
         .menu__dish-h4{
             margin: 0 0 0 10px;
             font-weight: 500;
             font-size: 18px;
+            transform: translateX(60px);
         }
         .menu__dish-p{
             margin: 0 0 0 10px;
@@ -69,12 +73,32 @@ body{
             display: flex;
             justify-content: flex-end;
             margin:-20px 0 0 0;
+
         }
+        
     }
   
 }
+.check-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    background-color: $btn-background-color;
+    top:0px;
+    bottom: 0;
+    right: 0;
+    width: 60px;
+    border-radius: 0px 15px 15px 0px;
+    transform: translateX(60px);
+    overflow: hidden;
+    .check-container__check{
+        color:white;
+        font-size: x-large;
+    }
+}   
 .heart-container-restaurant{
   @extend .heart-container;
   margin: 10px;
-
+  
 }
