@@ -10,6 +10,14 @@ body{
     font-family: roboto;
     width: 100%
 }
+@keyframes menu {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
 
 .img-menu-page{
    @include img-card;
@@ -57,27 +65,32 @@ body{
         border-radius: 20px;
         position: relative;
         overflow: hidden;
-        & :hover
+        &:hover
+        .check-container{
+            transform: translateX(0px);
+            transition: 0.5s ease-in-out;
+        }
         .menu__dish-h4{
             margin: 0 0 0 10px;
             font-weight: 500;
             font-size: 18px;
-            transform: translateX(60px);
+            width: 70%;
         }
         .menu__dish-p{
             margin: 0 0 0 10px;
             font-weight: 300;
             font-size: 15px;
+            width: 80%;
         }
         .menu__dish-p-price{
             display: flex;
             justify-content: flex-end;
             margin:-20px 0 0 0;
-
+            transform: translateX();
         }
         
     }
-  
+    
 }
 .check-container{
     display: flex;
@@ -90,8 +103,10 @@ body{
     right: 0;
     width: 60px;
     border-radius: 0px 15px 15px 0px;
+    transform-origin: right 50%;
     transform: translateX(60px);
     overflow: hidden;
+    transition-duration: 1s;
     .check-container__check{
         color:white;
         font-size: x-large;

@@ -14,6 +14,20 @@
   min-width: 186px;
 }
 
+.btn-new {
+  background-color: #99E2D0;
+  color: #008766;
+  border: none;
+  right: 30px;
+  margin-top: 15px;
+  position: absolute;
+  padding: 5px;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  justify-content: flex-start;
+}
+
 .choice-btn {
   cursor: pointer;
   box-shadow: 0px 5px 15px 0px rgba(0, 0, 0, 0.1490196078);
@@ -150,6 +164,14 @@ body {
   width: 100%;
 }
 
+@keyframes menu {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
 .img-menu-page {
   border-radius: 20px 20px 0px 0px;
   height: 180px;
@@ -211,21 +233,27 @@ body {
   position: relative;
   overflow: hidden;
 }
-.menu .menu__dish :hover .menu__dish-h4 {
+.menu .menu__dish:hover .check-container {
+  transform: translateX(0px);
+  transition: 0.5s ease-in-out;
+}
+.menu .menu__dish .menu__dish-h4 {
   margin: 0 0 0 10px;
   font-weight: 500;
   font-size: 18px;
-  transform: translateX(60px);
+  width: 70%;
 }
 .menu .menu__dish .menu__dish-p {
   margin: 0 0 0 10px;
   font-weight: 300;
   font-size: 15px;
+  width: 80%;
 }
 .menu .menu__dish .menu__dish-p-price {
   display: flex;
   justify-content: flex-end;
   margin: -20px 0 0 0;
+  transform: translateX();
 }
 
 .check-container {
@@ -239,8 +267,10 @@ body {
   right: 0;
   width: 60px;
   border-radius: 0px 15px 15px 0px;
+  transform-origin: right 50%;
   transform: translateX(60px);
   overflow: hidden;
+  transition-duration: 1s;
 }
 .check-container .check-container__check {
   color: white;

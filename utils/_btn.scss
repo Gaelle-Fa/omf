@@ -6,6 +6,18 @@
     width: fit-content;
     min-width: 186px;
 }
+.btn-new{
+    background-color: $btn-background-color;
+    color: $btn-new-color;
+    border: none;
+    right: 30px;
+    margin-top: 15px;
+    position: absolute;
+    padding: 5px;
+    width: fit-content;
+    display: flex;
+    justify-content: flex-start;
+}
 .choice-btn{
     @include card-clickable;
     margin: 10px 25px 15px 25px;
