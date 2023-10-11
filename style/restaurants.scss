@@ -10,13 +10,22 @@ body{
     font-family: roboto;
     width: 100%
 }
-@keyframes menu {
+@keyframes menu__dish {
     0%{
         opacity: 0;
     }
     100%{
         opacity: 100%;
     }
+}
+.entrees{
+    animation: menu__dish 3s 1s both;
+}
+.plats{
+    animation:menu__dish 3s 1.5s both;
+}
+.desserts{
+    animation: menu__dish 3s 2s both;
 }
 
 .img-menu-page{
@@ -75,18 +84,27 @@ body{
             font-weight: 500;
             font-size: 18px;
             width: 70%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-wrap: nowrap;
         }
         .menu__dish-p{
             margin: 0 0 0 10px;
             font-weight: 300;
             font-size: 15px;
             width: 80%;
+            text-wrap: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
         .menu__dish-p-price{
             display: flex;
             justify-content: flex-end;
             margin:-20px 0 0 0;
-            transform: translateX();
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+           
         }
         
     }

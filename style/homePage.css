@@ -54,7 +54,6 @@
   width: -moz-fit-content;
   width: fit-content;
   width: 32px;
-  height: 32px;
 }
 .heart-container:hover .heart__light, .restaurants .restaurants__heart-container-home:hover .heart__light {
   opacity: 0;
@@ -280,6 +279,46 @@ body {
 .restaurants .restaurants__heart-container-home {
   display: flex;
   justify-content: flex-end;
-  position: absolute;
-  width: 90%;
+  position: relative;
+  width: 95%;
+  top: -45px;
+}
+
+.loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+  opacity: 0.8;
+  background-color: white;
+  animation: timer 1s both;
+  animation-delay: 2s;
+  transform-origin: bottom;
+}
+.loader::after {
+  content: "ohmyfood";
+  font-family: Shrikhand;
+  font-size: xx-large;
+  color: #9356DC;
+  animation: spin infinite linear 2s;
+  border: 5px dashed #FF79DA;
+  border-radius: 50%;
+  padding: 10%;
+}
+
+@keyframes timer {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes spin {
+  to {
+    transform: rotateY(360deg);
+  }
 }/*# sourceMappingURL=homePage.css.map */

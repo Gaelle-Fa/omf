@@ -54,7 +54,6 @@
   width: -moz-fit-content;
   width: fit-content;
   width: 32px;
-  height: 32px;
 }
 .heart-container:hover .heart__light, .heart-container-restaurant:hover .heart__light {
   opacity: 0;
@@ -164,7 +163,7 @@ body {
   width: 100%;
 }
 
-@keyframes menu {
+@keyframes menu__dish {
   0% {
     opacity: 0;
   }
@@ -172,6 +171,18 @@ body {
     opacity: 100%;
   }
 }
+.entrees {
+  animation: menu__dish 3s 1s both;
+}
+
+.plats {
+  animation: menu__dish 3s 1.5s both;
+}
+
+.desserts {
+  animation: menu__dish 3s 2s both;
+}
+
 .img-menu-page {
   border-radius: 20px 20px 0px 0px;
   height: 180px;
@@ -242,18 +253,26 @@ body {
   font-weight: 500;
   font-size: 18px;
   width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
 }
 .menu .menu__dish .menu__dish-p {
   margin: 0 0 0 10px;
   font-weight: 300;
   font-size: 15px;
   width: 80%;
+  text-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .menu .menu__dish .menu__dish-p-price {
   display: flex;
   justify-content: flex-end;
   margin: -20px 0 0 0;
-  transform: translateX();
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .check-container {
