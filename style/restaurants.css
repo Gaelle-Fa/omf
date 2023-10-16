@@ -13,6 +13,10 @@
   width: fit-content;
   min-width: 186px;
 }
+.btn-gradient:hover, .menu__btn-gradient:hover {
+  box-shadow: 0px 7px 17px 0px rgba(0, 0, 0, 0.1490196078) inset;
+  opacity: 0.8;
+}
 
 .btn-new {
   background-color: #99E2D0;
@@ -47,6 +51,10 @@
 
 .menu__btn-gradient {
   margin: 30px auto;
+}
+.menu__btn-gradient:hover {
+  box-shadow: 0px 7px 17px 0px rgba(0, 0, 0, 0.1490196078) inset;
+  opacity: 0.8;
 }
 
 .heart-container, .heart-container-restaurant {
@@ -95,6 +103,11 @@ footer {
   padding: 10px 10px 10px 0px;
   gap: 16px;
 }
+@media screen and (min-width: 1024px) {
+  .footer {
+    flex-direction: row-reverse;
+  }
+}
 .footer .footer__h2 {
   font-family: shrikhand;
   margin-left: 20px;
@@ -103,7 +116,11 @@ footer {
   text-decoration: none;
   color: #353535;
 }
-.footer ul {
+.footer .footer__list-footer-icon {
+  margin-right: 5px;
+}
+
+ul {
   color: white;
   margin-left: -20px;
 }
@@ -131,7 +148,7 @@ footer {
   padding: 20px 0 20px 0;
   font-size: 16px;
   font-family: roboto;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25) inset;
+  box-shadow: 0px 7px 17px 0px rgba(0, 0, 0, 0.1490196078) inset;
 }
 
 .header-restaurant {
@@ -248,31 +265,41 @@ body {
   transform: translateX(0px);
   transition: 0.5s ease-in-out;
 }
+.menu .menu__dish:hover .menu__dish-h4 {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-wrap: nowrap;
+  width: 60%;
+  transition: width 1s ease;
+}
+.menu .menu__dish:hover .menu__dish-p {
+  text-wrap: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 60%;
+  transition: width 1s ease;
+}
+.menu .menu__dish:hover .menu__dish-p-price {
+  transform: translateX(-60px);
+  transition: width 1s ease-out;
+  transition-duration: 5s;
+}
 .menu .menu__dish .menu__dish-h4 {
   margin: 0 0 0 10px;
   font-weight: 500;
   font-size: 18px;
   width: 70%;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  text-wrap: nowrap;
 }
 .menu .menu__dish .menu__dish-p {
   margin: 0 0 0 10px;
   font-weight: 300;
   font-size: 15px;
-  width: 80%;
-  text-wrap: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  width: 70%;
 }
 .menu .menu__dish .menu__dish-p-price {
   display: flex;
   justify-content: flex-end;
   margin: -20px 0 0 0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .check-container {

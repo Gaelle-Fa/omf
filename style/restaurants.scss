@@ -74,36 +74,51 @@ body{
         border-radius: 20px;
         position: relative;
         overflow: hidden;
-        &:hover
+        &:hover{
         .check-container{
             transform: translateX(0px);
             transition: 0.5s ease-in-out;
         }
         .menu__dish-h4{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            text-wrap: nowrap;
+            width: 60%;
+            transition: width 1s ease;
+        }
+        .menu__dish-p{
+            text-wrap: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            width: 60%;
+            transition: width 1s ease;
+        }
+        .menu__dish-p-price{
+           transform: translateX(-60px);
+           transition: width 1s ease-out;
+           transition-duration: 5s;
+           
+        }    
+    }
+        .menu__dish-h4{
             margin: 0 0 0 10px;
             font-weight: 500;
             font-size: 18px;
             width: 70%;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            text-wrap: nowrap;
+            
         }
         .menu__dish-p{
             margin: 0 0 0 10px;
             font-weight: 300;
             font-size: 15px;
-            width: 80%;
-            text-wrap: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            width: 70%;
+           
         }
         .menu__dish-p-price{
             display: flex;
             justify-content: flex-end;
             margin:-20px 0 0 0;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+          
            
         }
         

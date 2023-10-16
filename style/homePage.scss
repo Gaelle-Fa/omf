@@ -52,6 +52,9 @@ body {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        @media screen and (min-width: 1024px) {
+            flex-direction: row;
+        }
     }
     .choice-btn{
         display: flex;
@@ -75,6 +78,8 @@ body {
     padding-right: 20px;
     color:$purple;
 }  
+
+
 .restaurants{
     background-color: $background-color;
     width: 100%;
@@ -88,11 +93,16 @@ body {
     .restaurants__restaurant-card{
        
         @include card-restaurant 
-    
+        
     }
+    @media screen and (min-width: 1024px){
+       
+        flex-direction:row;
+    
+}
     .restaurants__img-card{
         @include img-card
-        
+       
     }
     .restaurants__h3{
         font-size: 18px;
@@ -115,6 +125,7 @@ body {
         position: relative;
         width: 95%;
         top: -45px;
+        
     }
 }
 .loader{
@@ -125,7 +136,7 @@ body {
     position:fixed;
     inset:0;
     z-index: 1;
-    opacity: 0.8;
+    opacity: 1;
     background-color: white;
     animation: timer 1s both;
     animation-delay: 2s;

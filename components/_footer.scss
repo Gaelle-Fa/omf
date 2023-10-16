@@ -9,6 +9,10 @@ footer{
     width: 100%;
     padding:10px 10px 10px 0px;
     gap: 16px;
+    @media screen and (min-width: 1024px){ 
+        flex-direction:row-reverse;
+    
+}
     .footer__h2{
         font-family: shrikhand;
         margin-left: 20px;
@@ -17,11 +21,15 @@ footer{
     .footer__list-footer{
         text-decoration: none;
         color:$footer-color;
-       
+    }
+    .footer__list-footer-icon{
+        margin-right: 5px;
+    }  
+      
 }
 
 ul{
     color: white;
     margin-left: -20px;
-}
+  
 }
