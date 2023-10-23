@@ -221,6 +221,11 @@ body {
   justify-content: center;
   height: 275px;
 }
+@media screen and (min-width: 1024px) {
+  .img-menu-page {
+    height: 400px;
+  }
+}
 .img-menu-page img {
   -o-object-fit: cover;
      object-fit: cover;
@@ -238,6 +243,14 @@ body {
   margin-top: -40px;
   padding-bottom: 30px;
 }
+@media screen and (min-width: 1024px) {
+  .menu {
+    width: 80%;
+    justify-content: center;
+    margin-left: 10%;
+    margin-top: -60px;
+  }
+}
 .menu .menu__h1 {
   font-family: shrikhand;
   margin: 20px;
@@ -246,6 +259,12 @@ body {
   font-size: 28px;
   display: flex;
   flex-direction: row;
+}
+@media screen and (min-width: 1024px) {
+  .menu .menu__h1 {
+    justify-content: center;
+    padding: 40px;
+  }
 }
 .menu .menu__h3 {
   margin: 15px;
@@ -267,9 +286,14 @@ body {
   color: black;
   padding: 10px;
   margin: 15px;
-  border-radius: 20px;
+  border-radius: 15px;
   position: relative;
   overflow: hidden;
+}
+@media screen and (min-width: 1024px) {
+  .menu .menu__dish {
+    width: auto;
+  }
 }
 .menu .menu__dish:hover .check-container {
   transform: translateX(0px);
@@ -335,4 +359,31 @@ body {
 
 .heart-container-restaurant {
   margin: 10px;
+}
+
+.entrees {
+  margin-top: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .entrees {
+    margin: 2% 20%;
+  }
+}
+
+.plats {
+  margin-top: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .plats {
+    margin: 2% 20%;
+  }
+}
+
+.desserts {
+  margin-top: 20px;
+}
+@media screen and (min-width: 1024px) {
+  .desserts {
+    margin: 2% 20%;
+  }
 }/*# sourceMappingURL=restaurants.css.map */
