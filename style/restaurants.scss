@@ -5,44 +5,52 @@
 @import '../components/footer';
 @import '../components/header';
 
-body{
+body {
     margin: 0px;
     font-family: roboto;
     width: 100%
 }
+
 @keyframes menu__dish {
-    0%{
+    0% {
         opacity: 0;
     }
-    100%{
+
+    100% {
         opacity: 100%;
     }
 }
-.entrees{
+
+.entrees {
     animation: menu__dish 3s 1s both;
 }
-.plats{
-    animation:menu__dish 3s 1.5s both;
+
+.plats {
+    animation: menu__dish 3s 1.5s both;
 }
-.desserts{
+
+.desserts {
     animation: menu__dish 3s 2s both;
 }
 
-.img-menu-page{
-   @include img-card;
-    display: flex; 
+.img-menu-page {
+    @include img-card;
+    display: flex;
     justify-content: center;
     height: 275px;
-    @media screen and (min-width: 1024px){
+
+    @media screen and (min-width: 1024px) {
         height: 400px;
     }
-    img{
+
+    img {
         object-fit: cover;
         width: 100%;
         height: 90%;
     }
 }
-.menu{
+
+.menu {
     display: flex;
     flex-direction: column;
     background-color: $background-color;
@@ -51,35 +59,41 @@ body{
     position: relative;
     margin-top: -40px;
     padding-bottom: 30px;
-    @media screen and (min-width: 1024px){
+
+    @media screen and (min-width: 1024px) {
         width: 80%;
         justify-content: center;
         margin-left: 10%;
         margin-top: -60px;
     }
-    .menu__h1{
+
+    .menu__h1 {
         font-family: shrikhand;
         margin: 20px;
         font-weight: 400;
         font-style: italic;
         font-size: 28px;
-        display:flex;
+        display: flex;
         flex-direction: row;
-        @media screen and (min-width: 1024px){
+        justify-content: space-between;
+        @media screen and (min-width: 1024px) {
             justify-content: center;
             padding: 40px;
         }
     }
-    .menu__h3{
+
+    .menu__h3 {
         margin: 15px;
         font-weight: 300;
         font-size: 16px;
     }
-    .menu__h3-border{
+
+    .menu__h3-border {
         border-bottom: solid 3px $btn-background-color;
         width: 40px;
     }
-    .menu__dish{
+
+    .menu__dish {
         @include card-clickable;
         color: black;
         padding: 10px;
@@ -87,67 +101,76 @@ body{
         border-radius: 15px;
         position: relative;
         overflow: hidden;
-        @media screen and (min-width: 1024px){
+
+        @media screen and (min-width: 1024px) {
             width: auto;
         }
-        &:hover{
-        .check-container{
-            transform: translateX(0px);
-            transition: 0.5s ease-in-out;
+
+        &:hover {
+            .check-container {
+                transform: translateX(0px);
+                transition: 0.5s ease-in-out;
+            }
+
+            .menu__dish-h4 {
+                overflow: hidden;
+                text-overflow: ellipsis;
+                text-wrap: nowrap;
+                width: 60%;
+                transition: width 1s ease;
+            }
+
+            .menu__dish-p {
+                text-wrap: nowrap;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                width: 60%;
+                transition: width 1s ease;
+            }
+
+            .menu__dish-p-price {
+                transform: translateX(-60px);
+
+
+            }
         }
-        .menu__dish-h4{
-            overflow: hidden;
-            text-overflow: ellipsis;
-            text-wrap: nowrap;
-            width: 60%;
-            transition: width 1s ease;
-        }
-        .menu__dish-p{
-            text-wrap: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            width: 60%;
-            transition: width 1s ease;
-        }
-        .menu__dish-p-price{
-           transform: translateX(-60px);
-          
-           
-        }    
-    }
-        .menu__dish-h4{
+
+        .menu__dish-h4 {
             margin: 0 0 0 10px;
             font-weight: 500;
             font-size: 18px;
             width: 70%;
-            
+
         }
-        .menu__dish-p{
+
+        .menu__dish-p {
             margin: 0 0 0 10px;
             font-weight: 300;
             font-size: 15px;
             width: 70%;
-           
+
         }
-        .menu__dish-p-price{
+
+        .menu__dish-p-price {
             display: flex;
             justify-content: flex-end;
-            margin:-20px 0 0 0;
+            margin: -20px 0 0 0;
             transition: transform 1s ease;
             transition-duration: 1s;
-           
+
         }
-        
+
     }
-    
+
 }
-.check-container{
+
+.check-container {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     background-color: $btn-background-color;
-    top:0px;
+    top: 0px;
     bottom: 0;
     right: 0;
     width: 60px;
@@ -156,31 +179,41 @@ body{
     transform: translateX(60px);
     overflow: hidden;
     transition-duration: 1s;
-    .check-container__check{
-        color:white;
+
+    .check-container__check {
+        color: white;
         font-size: x-large;
     }
-}   
-.heart-container-restaurant{
-  @extend .heart-container;
-  margin: 10px;
+}
+
+.heart-container-restaurant {
+    @extend .heart-container;
+    margin: 10px;
+    display: flex;
+    justify-content: flex-end;
   
 }
-.entrees{
+
+.entrees {
     margin-top: 20px;
-    @media screen and (min-width: 1024px){
+
+    @media screen and (min-width: 1024px) {
         margin: 2% 20%;
     }
 }
-.plats{
+
+.plats {
     margin-top: 20px;
-    @media screen and (min-width: 1024px){
+
+    @media screen and (min-width: 1024px) {
         margin: 2% 20%;
     }
 }
-.desserts{
+
+.desserts {
     margin-top: 20px;
-    @media screen and (min-width: 1024px){
+
+    @media screen and (min-width: 1024px) {
         margin: 2% 20%;
     }
 }

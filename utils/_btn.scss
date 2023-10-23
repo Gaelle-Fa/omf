@@ -34,7 +34,7 @@
 }
 .menu__btn-gradient{
    @extend .btn-gradient;
-   margin: 30px auto;
+   margin: auto;
    &:hover{
     box-shadow: $shadow-light; 
     opacity: 0.8;
@@ -42,7 +42,6 @@
 }
 .heart-container{
     position:relative;
-    width: fit-content;
     width: 32px;
         
    
