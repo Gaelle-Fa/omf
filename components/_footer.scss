@@ -9,21 +9,31 @@ footer{
     width: 100%;
     padding:10px 10px 10px 0px;
     gap: 16px;
-    @media screen and (min-width: 1024px){ 
-        flex-direction:row-reverse;
-    
-}
+    @media screen and (min-width: 1024px){
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: row-reverse;
+        padding: 30px 60px;
+    }
+   
     .footer__h2{
         font-family: shrikhand;
         margin-left: 20px;
+     
     }
     
     .footer__list-footer{
         text-decoration: none;
         color:$footer-color;
+        @media screen and (min-width: 1024px){ 
+            display: flex;
+            gap:7px;
+        
+    } 
     }
     .footer__list-footer-icon{
-        margin-right: 5px;
+        margin-right: 8px;
+        font-size: 15px;
     }  
       
 }

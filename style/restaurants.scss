@@ -95,8 +95,7 @@ body{
         }
         .menu__dish-p-price{
            transform: translateX(-60px);
-           transition: width 1s ease-out;
-           transition-duration: 5s;
+          
            
         }    
     }
@@ -118,7 +117,8 @@ body{
             display: flex;
             justify-content: flex-end;
             margin:-20px 0 0 0;
-          
+            transition: transform 1s ease;
+            transition-duration: 1s;
            
         }
         

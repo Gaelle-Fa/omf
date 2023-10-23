@@ -44,6 +44,13 @@ body {
     padding: 20px 0px 20px 0px;
     margin-bottom: 25px;
     position: relative;
+    
+    @media screen and (min-width: 1024px) {
+        padding: 50px 180px 50px 180px;
+        gap:25px;
+        width: auto;
+        height: fit-content;
+    }
     .nav-functioning__h2{
         font-weight: 700;
         margin: 20px;
@@ -54,6 +61,7 @@ body {
         justify-content: center;
         @media screen and (min-width: 1024px) {
             flex-direction: row;
+            justify-content: space-between;
         }
     }
     .choice-btn{
@@ -68,6 +76,11 @@ body {
         align-items: center;
         position: absolute;
         left: -1px;
+        
+        @media screen and (min-width: 1024px) {
+            position: relative;
+            left: -38px;
+        }
     }
 } 
 .i-list{
@@ -85,21 +98,28 @@ body {
     width: 100%;
     padding: 20px 0px 20px 0px;
     margin-bottom: 35px; 
+    @media screen and (min-width: 1024px) {
+        padding: 50px 180px 50px 180px;
+        gap: 50px;
+        width: auto;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
     .restaurants__h2{
         font-weight: 700;
         margin: 10px 0px 20px 20px;
-       
+        @media screen and (min-width: 1024px){
+           position: absolute;
+    }
     }
     .restaurants__restaurant-card{
        
         @include card-restaurant 
         
+      
     }
-    @media screen and (min-width: 1024px){
-       
-        flex-direction:row;
-    
-}
     .restaurants__img-card{
         @include img-card
        

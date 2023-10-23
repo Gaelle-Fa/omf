@@ -38,6 +38,10 @@
     color: $color;
     background-color: $gradient-btn;
     border-radius: $radius;
-
+    @media screen and (min-width: 1024px){
+        width: 360px;
+        position: relative;
+        margin-top: 80px;
+}
 }
 

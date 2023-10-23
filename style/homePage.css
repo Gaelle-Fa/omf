@@ -105,7 +105,10 @@ footer {
 }
 @media screen and (min-width: 1024px) {
   .footer {
+    display: flex;
+    justify-content: flex-start;
     flex-direction: row-reverse;
+    padding: 30px 60px;
   }
 }
 .footer .footer__h2 {
@@ -116,8 +119,15 @@ footer {
   text-decoration: none;
   color: #353535;
 }
+@media screen and (min-width: 1024px) {
+  .footer .footer__list-footer {
+    display: flex;
+    gap: 7px;
+  }
+}
 .footer .footer__list-footer-icon {
-  margin-right: 5px;
+  margin-right: 8px;
+  font-size: 15px;
 }
 
 ul {
@@ -213,6 +223,15 @@ body {
   margin-bottom: 25px;
   position: relative;
 }
+@media screen and (min-width: 1024px) {
+  .nav-functioning {
+    padding: 50px 180px 50px 180px;
+    gap: 25px;
+    width: auto;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+}
 .nav-functioning .nav-functioning__h2 {
   font-weight: 700;
   margin: 20px;
@@ -225,6 +244,7 @@ body {
 @media screen and (min-width: 1024px) {
   .nav-functioning .nav-functioning-btn {
     flex-direction: row;
+    justify-content: space-between;
   }
 }
 .nav-functioning .choice-btn {
@@ -245,6 +265,12 @@ body {
   position: absolute;
   left: -1px;
 }
+@media screen and (min-width: 1024px) {
+  .nav-functioning .bubble-number__functioning {
+    position: relative;
+    left: -38px;
+  }
+}
 
 .i-list {
   padding-right: 20px;
@@ -262,9 +288,25 @@ body {
   padding: 20px 0px 20px 0px;
   margin-bottom: 35px;
 }
+@media screen and (min-width: 1024px) {
+  .restaurants {
+    padding: 50px 180px 50px 180px;
+    gap: 50px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
 .restaurants .restaurants__h2 {
   font-weight: 700;
   margin: 10px 0px 20px 20px;
+}
+@media screen and (min-width: 1024px) {
+  .restaurants .restaurants__h2 {
+    position: absolute;
+  }
 }
 .restaurants .restaurants__restaurant-card {
   cursor: pointer;
@@ -278,8 +320,10 @@ body {
   border-radius: 20px;
 }
 @media screen and (min-width: 1024px) {
-  .restaurants {
-    flex-direction: row;
+  .restaurants .restaurants__restaurant-card {
+    width: 360px;
+    position: relative;
+    margin-top: 80px;
   }
 }
 .restaurants .restaurants__img-card {

@@ -105,7 +105,10 @@ footer {
 }
 @media screen and (min-width: 1024px) {
   .footer {
+    display: flex;
+    justify-content: flex-start;
     flex-direction: row-reverse;
+    padding: 30px 60px;
   }
 }
 .footer .footer__h2 {
@@ -116,8 +119,15 @@ footer {
   text-decoration: none;
   color: #353535;
 }
+@media screen and (min-width: 1024px) {
+  .footer .footer__list-footer {
+    display: flex;
+    gap: 7px;
+  }
+}
 .footer .footer__list-footer-icon {
-  margin-right: 5px;
+  margin-right: 8px;
+  font-size: 15px;
 }
 
 ul {
@@ -281,8 +291,6 @@ body {
 }
 .menu .menu__dish:hover .menu__dish-p-price {
   transform: translateX(-60px);
-  transition: width 1s ease-out;
-  transition-duration: 5s;
 }
 .menu .menu__dish .menu__dish-h4 {
   margin: 0 0 0 10px;
@@ -300,6 +308,8 @@ body {
   display: flex;
   justify-content: flex-end;
   margin: -20px 0 0 0;
+  transition: transform 1s ease;
+  transition-duration: 1s;
 }
 
 .check-container {
