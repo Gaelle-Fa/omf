@@ -115,13 +115,13 @@ body {
             .menu__dish-h4 {
                 overflow: hidden;
                 text-overflow: ellipsis;
-                text-wrap: nowrap;
+                
                 width: 60%;
                 transition: width 1s ease;
             }
-
+            
             .menu__dish-p {
-                text-wrap: nowrap;
+               
                 overflow: hidden;
                 text-overflow: ellipsis;
                 width: 60%;
