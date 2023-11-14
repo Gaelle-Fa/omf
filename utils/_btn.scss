@@ -21,6 +21,7 @@
     width: fit-content;
     display: flex;
     justify-content: flex-start;
+    border-radius: 3px
 }
 .choice-btn{
     @include card-clickable;

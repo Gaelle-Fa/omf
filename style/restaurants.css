@@ -30,6 +30,7 @@
   width: fit-content;
   display: flex;
   justify-content: flex-start;
+  border-radius: 3px;
 }
 
 .choice-btn {
@@ -168,6 +169,7 @@ li {
   font-size: 16px;
   font-family: roboto;
   box-shadow: 0px 7px 17px 0px rgba(0, 0, 0, 0.1490196078) inset;
+  text-decoration: none;
 }
 
 .header-restaurant {
@@ -312,14 +314,14 @@ body {
 .menu .menu__dish:hover .menu__dish-h4 {
   overflow: hidden;
   text-overflow: ellipsis;
-  text-wrap: nowrap;
+  white-space: nowrap;
   width: 60%;
   transition: width 1s ease;
 }
 .menu .menu__dish:hover .menu__dish-p {
-  text-wrap: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
   width: 60%;
   transition: width 1s ease;
 }
